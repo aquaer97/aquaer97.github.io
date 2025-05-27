@@ -1,4 +1,1 @@
-<!DOCTYPE html>
-incompetent WWW website<br/>
-
-
+# incompetent WWW website
