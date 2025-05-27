@@ -1,3 +1,3 @@
 # incompetent WWW website
 
-## Ostatnia aktualizacja: **27.05.2025**
+## Ostatnia aktualizacja: _27.05.2025_
