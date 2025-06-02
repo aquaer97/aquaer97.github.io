@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="icon" href="soad/soad-front.jpg" type="image/jpg">
+
+    <title>die Lieblingsmuzik</title>
+</head>
+
+<body onload="zegar()">
+    <nav>
+        <div class="div-powrot">
+            <a href="index.html"><button class="back" style="cursor:pointer">
+                    << Powrót</button></a>
+        </div>
+        <h1 class="logo">Moje ulubione zespoły muzyczne</h1><br />
+        <div style="border:3px solid #00ff41; width:100px; font-family:monospace" id="czas">
+            <script src="./zegar_zewnetrzny.js"></script>
+        </div>
+    </nav>
+    <main> 
+        <script>
+            const images = [
+                "SOAD/soad-1.jpg",
+                "SOAD/soad-2.jpg",
+                "SOAD/soad-3.jpg",
+                "SOAD/soad-4.jpg",
+                "SOAD/soad-5.jpg",
+                "SOAD/soad-6.jpg",
+                "SOAD/soad-7.jpg",
+
+            ];
+
+            let currentIndex = 0; // Indeks aktualnie wyświetlanego obrazka
+
+            // Funkcja zmieniająca zdjęcie po kliknięciu
+            function changeImage() {
+                currentIndex++;
+                if (currentIndex >= images.length) {
+                    currentIndex = 0; // koniec tablicy = od nowa
+                }
+                // Zmiana źródła zdjęcia na kolejne
+                document.getElementById("sband").src = images[currentIndex];
+            }
+            function zmiana1() {
+                document.getElementById("soad").src = "SOAD/soad-back.jpg"
+            }
+            function zmiana2() {
+                document.getElementById("soad").src = "SOAD/soad-front.jpg"
+            }
+            function zmiana3() {
+                document.getElementById("toxicity").src = "SOAD/toxicity-back.jpg";
+            }
+            function zmiana4() {
+                document.getElementById("toxicity").src = "SOAD/toxicity-front.jpg";
+            }
+            function zmiana5() {
+                document.getElementById("steal").src = "SOAD/steal-back.jpg";
+            }
+            function zmiana6() {
+                document.getElementById("steal").src = "SOAD/steal-front.jpg";
+            }
+            function zmiana7() {
+                document.getElementById("mezmerize").src = "SOAD/mezmerize-back.jpg";
+            }
+            function zmiana8() {
+                document.getElementById("mezmerize").src = "SOAD/mezmerize-front.jpg"
+            }
+            function zmiana9() {
+                document.getElementById("hypnotize").src = "SOAD/hypnotize-back.jpg";
+            }
+            function zmiana10() {
+                document.getElementById("hypnotize").src = "SOAD/hypnotize-front.jpg";
+            }
+            function spotify1() {
+                window.open("https://open.spotify.com/album/3kQs7B3H8jmWbzNecTrn1i", "_blank");
+            }
+            function spotify2() {
+                window.open("https://open.spotify.com/album/6jWde94ln40epKIQCd8XUh", "_blank");
+            }
+            function spotify3() {
+                window.open("https://open.spotify.com/album/6lA1sGw7eCv27bcpd5E0wT", "_blank");
+            }
+            function spotify4() {
+                window.open("https://open.spotify.com/album/0cn6MHyx4YuZauaB7Pb66o", "_blank");
+            }
+            function spotify5() {
+                window.open("https://open.spotify.com/album/1UeOoLhpWzpuM5cWQsbCXg", "_blank");
+            }
+
+
+
+        </script>
+        <figure>
+            <img src="SOAD/soad-1.jpg" width="44%" alt="sband" id="sband" onclick="changeImage()"
+                style="cursor:pointer">
+            <figcaption>Kliknij na zdjęcie, aby zobaczyć następne</figcaption>
+        </figure>
+        <h1>System Of A Down</h1>
+        <p>System of a Down to ormiańsko-amerykański zespół nu-metalowy założony w 1994 roku w Glendale, w Kalifornii.
+            Od 1997 roku skład zespołu tworzą jego założyciele: <b>Serj Tankian</b> (wokal prowadzący, instrumenty
+            klawiszowe), <b>Daron Malakian</b> (gitara, wokal) i Shavo Odadjian (gitara basowa, chórki); a także <b>John
+                Dolmayan</b> (perkusja), który zastąpił pierwotnego perkusistę <b>Andy'ego Khachaturiana</b>.
+
+            Zespół odniósł sukces komercyjny dzięki wydaniu pięciu albumów studyjnych, z których trzy zadebiutowały na
+            pierwszym miejscu listy Billboard 200 w USA. System of a Down był czterokrotnie nominowany do nagrody
+            Grammy, a ich utwór „B.Y.O.B.” zdobył Grammy w kategorii Najlepsze wykonanie hard rockowe w 2006 roku.
+            Zespół zawiesił działalność na 4 lata w 2006 roku. Poza dwoma nowymi utworami z
+            2020 roku („Protect the Land” i „Genocidal Humanoidz”), System of a Down nie wydał nowego materiału od czasu
+            albumów Mezmerize i Hypnotize z 2005 roku. Zespół sprzedał ponad 12 milionów płyt na całym świecie, a dwa
+            ich single – „Aerials” i „Hypnotize” – osiągnęły pierwsze miejsce na liście Alternative Songs magazynu
+            Billboard. System Of A Down jest znany z unikalnego stylu muzycznego, który łączy elementy metalu, rocka i
+            muzyki ormiańskiej, a ich utwory często zawierają komentarz polityczny.
+            Wszyscy członkowie System of a Down są pochodzenia ormiańskiego.
+        </p>
+        <h1>DYSKOGRAFIA</h1>
+        <p>Do tej pory System Of A Down wydało 5 albumów studyjnych na przestrzeni ostatnich 27 lat, które sprzedały się
+            w liczbie ponad 40 milionów egzemplarzy.
+        </p>
+        <h4>Aby odsłuchać danego albumu w serwisie Spotify, kliknij na jego okładkę lewym przyciskiem myszy. (Zostanie
+            otworzony w nowej karcie)</h4>
+        <table>
+
+            <td>
+                <figure><img src="SOAD/soad-front.jpg" class="albumy" alt="soad" id="soad" onmouseover="zmiana1()"
+                        onmouseout="zmiana2()" onclick="spotify1()" style="cursor:pointer">
+                    <figcaption>System Of A Down (1998)</figcaption>
+                </figure>
+            </td>
+            <td>
+                <figure><img src="SOAD/toxicity-front.jpg" class="albumy" alt="toxicity" id="toxicity"
+                        onmouseover="zmiana3()" onmouseout="zmiana4()" onclick="spotify2()" style="cursor:pointer">
+                    <figcaption>Toxicity (2001)</figcaption>
+                </figure>
+            </td>
+            <td>
+                <figure><img src="SOAD/steal-front.jpg" class="albumy" alt="steal" id="steal" onmouseover="zmiana5()"
+                        onmouseout="zmiana6()" onclick="spotify3()" style="cursor:pointer">
+                    <figcaption>Steal This Album! (2002)</figcaption>
+                </figure>
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <figure><img src="SOAD/mezmerize-front.jpg" class="albumy" alt="mezmerize" id="mezmerize"
+                            onmouseover="zmiana7()" onmouseout="zmiana8()" onclick="spotify4()" style="cursor:pointer">
+                        <figcaption>Mezmerize (2005)</figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure><img src="SOAD/hypnotize-front.jpg" class="albumy" alt="hypnotize" id="hypnotize"
+                            onmouseover="zmiana9()" onmouseout="zmiana10()" onclick="spotify5()" style="cursor:pointer">
+                        <figcaption>Hypnotize (2005)</figcaption>
+                    </figure>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </main>
+    <hr />
+    <footer>
+        Jakub Gepfert &copy; 2025
+    </footer>
+</body>
+
+</html>

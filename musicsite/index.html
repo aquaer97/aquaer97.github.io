@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="icon" href="spiderman.gif" type="image/gif">
+    <title>die Lieblingsmuzik</title>
+</head>
+
+<body onload="zegar()">
+    <nav>
+
+        <h1 class="logo">Moje ulubione zespoły muzyczne</h1><br />
+        <div style="border:3px solid #00ff41; width:100px; font-family:monospace" id="czas">
+            <script src="./zegar_zewnetrzny.js"></script>
+        </div>
+    </nav> 
+    <main>
+        <table class="mainpage">
+            <tr class="mainpage">
+                <td class="mainpage">
+                    <img src="Rammstein/rammstein-transparent.png" alt="Rammstein" id="Rammstein" onclick="rammstein()"
+                        height="150px" style="cursor:pointer">
+                    <figcaption style="font-family: monospace;color: #00ff41;">
+                </td>
+                <td class="mainpage">
+                    <img src="Metallica/metallica-transparent.png" alt="Metallica" id="Metallica" onclick="metallica()"
+                        style="cursor:pointer">
+                    <figcaption style="font-family: monospace;color: #00ff41;">
+
+                </td>
+                <td class="mainpage">
+                    <img src="SOAD/soad-transparent.png" alt="soad" id="soad" onclick="soad()" height="300px;"
+                        style="cursor:pointer">
+
+                </td>
+                <td class="mainpage">
+                    <img src="Linkin Park/linkinpark-transparent.png" alt="linkinpark" id="linkinpark"
+                        onclick="linkinpark()" height="200px" style="cursor:pointer">
+                </td>
+            </tr>
+
+        </table>
+        <script>
+            function rammstein() {
+                window.location.href = "rammstein.html"
+            }
+            function metallica() {
+                window.location.href = "metallica.html"
+            }
+            function soad() {
+                window.location.href = "soad.html"
+            }
+            function linkinpark() {
+                window.location.href = "linkinpark.html"
+            }
+        </script>
+    </main>
+    <hr />
+    <footer>
+        Jakub Gepfert &copy; 2025
+    </footer>
+</body>
+
+</html>

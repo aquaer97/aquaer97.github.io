@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="icon" href="Rammstein/herzeleid-front.jpg" type="image/jpg">
+    <style>
+        img {
+            width: 35%;
+        }
+    </style>
+    <title>die Lieblingsmuzik</title>
+</head>
+
+<body onload="zegar()">
+    <nav>
+        <div class="div-powrot">
+            <a href="index.html"><button class="back" style="cursor:pointer">
+                    << Powrót</button></a>
+        </div>
+        <h1 class="logo">Moje ulubione zespoły muzyczne</h1><br />
+        <div style="border:3px solid #00ff41; width:100px; font-family:monospace" id="czas">
+            <script src="./zegar_zewnetrzny.js"></script>
+        </div>
+    </nav> 
+    <main>
+        <script>
+            const images = [
+                "Rammstein/rammstein-band.jpg",
+                "Rammstein/rammstein-1.jpg",
+                "Rammstein/rammstein-2.jpg",
+                "Rammstein/rammstein-3.jpg",
+                "Rammstein/rammstein-4.jpg",
+                "Rammstein/rammstein-5.jpg",
+                "Rammstein/rammstein-6.jpeg",
+                "Rammstein/rammstein-7.jpg",
+                "Rammstein/rammstein-8.jpg",
+                "Rammstein/rammstein-9.jpg",
+            ];
+
+            let currentIndex = 0; // Indeks aktualnie wyświetlanego obrazka
+
+            // Funkcja zmieniająca zdjęcie po kliknięciu
+            function changeImage() {
+                currentIndex++;
+                if (currentIndex >= images.length) {
+                    currentIndex = 0; // koniec tablicy = od nowa
+                }
+                // Zmiana źródła zdjęcia na kolejne
+                document.getElementById("rband").src = images[currentIndex];
+            }
+            function zmiana1() {
+                document.getElementById("herzeleid").src = "Rammstein/herzeleid-back.jpg"
+            }
+            function zmiana2() {
+                document.getElementById("herzeleid").src = "Rammstein/herzeleid-front.jpg"
+            }
+            function zmiana3() {
+                document.getElementById("sehnsucht").src = "Rammstein/sehnsucht-back.jpg"
+            }
+            function zmiana4() {
+                document.getElementById("sehnsucht").src = "Rammstein/sehnsucht-front.jpg"
+            }
+            function zmiana5() {
+                document.getElementById("mutter").src = "Rammstein/mutter-back.jpg";
+            }
+            function zmiana6() {
+                document.getElementById("mutter").src = "Rammstein/mutter-front.jpg";
+            }
+            function zmiana7() {
+                document.getElementById("reisereise").src = "Rammstein/reise-reise-back.jpg";
+            }
+            function zmiana8() {
+                document.getElementById("reisereise").src = "Rammstein/reisereise-front.jpg";
+            }
+            function zmiana9() {
+                document.getElementById("rosenrot").src = "Rammstein/rosenrot-back.jpg";
+            }
+            function zmiana10() {
+                document.getElementById("rosenrot").src = "Rammstein/rosenrot-front.jpg";
+            }
+            function zmiana11() {
+                document.getElementById("lifad").src = "Rammstein/lifad-back.jpg";
+            }
+            function zmiana12() {
+                document.getElementById("lifad").src = "Rammstein/lifad-front.jpg";
+            }
+            function zmiana13() {
+                document.getElementById("2019").src = "Rammstein/rammstein-2019-back.jpg";
+            }
+            function zmiana14() {
+                document.getElementById("2019").src = "Rammstein/rammstein-2019-front.jpg";
+            }
+            function zmiana15() {
+                document.getElementById("zeit").src = "Rammstein/zeit-back.jpg";
+            }
+            function zmiana16() {
+                document.getElementById("zeit").src = "Rammstein/zeit-front.jpg";
+            }
+            function spotify1() {
+                window.open('https://open.spotify.com/album/6HlDm9fzYxk4vkkr3YEvSv?si=B_gzhLyaQPKXwVl_YRMkoA', '_blank');
+            }
+            function spotify2() {
+                window.open('https://open.spotify.com/album/2w6Vy8qZLU4niyQAHyu0Ag?si=BiKCrjiBSQKCFRzi3oj0TQ', '_blank');
+            }
+            function spotify3() {
+                window.open('https://open.spotify.com/album/1CtTTpKbHU8KbHRB4LmBbv?si=bsP6X3whTmGggXlPQr1a-w', '_blank');
+            }
+            function spotify4() {
+                window.open('https://open.spotify.com/album/74ydDCcXTco741y42ceRJ5?si=ar4O8JyOSB-Zsw1dIhRSGw', '_blank');
+            }
+            function spotify5() {
+                window.open('https://open.spotify.com/album/3PrS5X3QNdDUlBIE4bz6J2?si=eZpsomNPSySqiHbxZ6tzjw', '_blank');
+            }
+            function spotify6() {
+                window.open('https://open.spotify.com/album/29J0MchD0OWNeiMNbPDwfa?si=EMoOLd2aQEOwurnzdw7SRw', '_blank');
+            }
+            function spotify7() {
+                window.open('https://open.spotify.com/album/1LoyJQVHPLHE3fCCS8Juek?si=ZMGW4Tn-RBCxTOMfa-gGXQ', '_blank');
+            }
+            function spotify8() {
+                window.open('https://open.spotify.com/album/75OE7M0wduJyffbffehHuR?si=8QpefdFXRcuoipB8YrFLsA', '_blank');
+            }
+
+        </script>
+        <figure>
+            <img src="Rammstein/rammstein-band.jpg" width="44%" alt="rband" id="rband" onclick="changeImage()"
+                style="cursor:pointer">
+            <figcaption>Kliknij na zdjęcie, aby zobaczyć następne</figcaption>
+        </figure>
+        <h1>Rammstein</h1>
+        <h3> (wymowa niemiecka: [ˈʁamʃtaɪn])</h3>
+        <p>Niemiecka grupa muzyczna tworząca muzykę z gatunku Neue Deutsche Härte, która powstała w
+            Berlinie w 1994 roku. Skład zespołu, który obejmuje wokalistę <b>Tilla Lindemanna</b>,<br /> gitarzystę
+            prowadzącego
+            <b>Richarda Z. Kruspe</b>, gitarzystę rytmicznego <b>Paula Landersa</b>, basistę <b>Olivera
+                Riedela</b>, perkusistę <b>Christopha Schneidera</b> oraz klawiszowca <b>Christiana "Flake" Lorenza
+            </b>, nie zmienił się przez
+            całą historię zespołu, podobnie jak ich podejście do pisania utworów. Przed
+            założeniem zespołu, niektórzy członkowie byli związani z punkrockowymi zespołami Feeling B oraz First
+            Arsch.
+        </p>
+        <h1>DYSKOGRAFIA</h1>
+        <p>Do tej pory Rammstein wydał 7 albumów studyjnych na przestrzeni ostatnich 30 lat, które sprzedały się w
+            łącznym nakładzie ponad 20 milionów sztuk.</p><br />
+        <h4>Aby odsłuchać danego albumu w serwisie Spotify, kliknij na jego okładkę lewym przyciskiem myszy. (Zostanie
+            otworzony w nowej karcie)</h4>
+        <table>
+            <tr>
+                <td>
+                    <figure><img src="Rammstein/herzeleid-front.jpg" class="albumy" alt="herzeleid" id="herzeleid"
+                            onmouseover="zmiana1()" onmouseout="zmiana2()" onclick="spotify1()" style="cursor:pointer">
+                        <figcaption>Herzeleid (1995)</figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure><img src="Rammstein/sehnsucht-front.jpg" class="albumy" alt="sehnsucht" id="sehnsucht"
+                            onmouseover="zmiana3()" onmouseout="zmiana4()" onclick="spotify2()" style="cursor:pointer">
+                        <figcaption>Sehnsucht (1997)</figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure><img src="Rammstein/mutter-front.jpg" class="albumy" alt="mutter" id="mutter"
+                            onmouseover="zmiana5()" onmouseout="zmiana6()" onclick="spotify3()" style="cursor:pointer">
+                        <figcaption>Mutter (2001)</figcaption>
+                    </figure>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <figure><img src="Rammstein/reisereise-front.jpg" class="albumy" alt="reisereise" id="reisereise"
+                            onmouseover="zmiana7()" onmouseout="zmiana8()" onclick="spotify4()" style="cursor:pointer">
+                        <figcaption>Reise, Reise (2004)</figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure><img src="Rammstein/rosenrot-front.jpg" class="albumy" alt="rosenrot" id="rosenrot"
+                            onmouseover="zmiana9()" onmouseout="zmiana10()" onclick="spotify5()" style="cursor:pointer">
+                        <figcaption>Rosenrot (2005)</figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure><img src="Rammstein/lifad-front.jpg" class="albumy" alt="lifad" id="lifad"
+                            onmouseover="zmiana11()" onmouseout="zmiana12()" onclick="spotify6()"
+                            style="cursor:pointer">
+                        <figcaption>Liebe ist f&#252;r alle da (2009)</figcaption>
+                    </figure>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <figure><img src="Rammstein/rammstein-2019-front.jpg" class="albumy" alt="2019" id="2019"
+                            onmouseover="zmiana13()" onmouseout="zmiana14()" onclick="spotify7()"
+                            style="cursor:pointer">
+                        <figcaption><i>Untitled</i> (2019)</figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure><img src="Rammstein/zeit-front.jpg" class="albumy" alt="zeit" id="zeit"
+                            onmouseover="zmiana15()" onmouseout="zmiana16()" onclick="spotify8()"
+                            style="cursor:pointer">
+                        <figcaption>Zeit (2022)</figcaption>
+                    </figure>
+                </td>
+            </tr>
+        </table>
+    </main>
+    <hr />
+    <footer>
+        Jakub Gepfert &copy; 2025
+    </footer>
+</body>
+
+</html>

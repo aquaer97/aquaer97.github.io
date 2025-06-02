@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="icon" href="metallica/killemall-front.jpg" type="image/jpg">
+    <title>die Lieblingsmuzik</title>
+</head>
+
+<body onload="zegar()">
+    <nav>
+        <div class="div-powrot">
+            <a href="index.html"><button class="back" style="cursor:pointer">
+                    << Powrót</button></a>
+        </div>
+        <h1 class="logo">Moje ulubione zespoły muzyczne</h1><br />
+        <div style="border:3px solid #00ff41; width:100px; font-family:monospace" id="czas">
+            <script src="./zegar_zewnetrzny.js"></script>
+        </div> 
+    </nav>
+    <main>
+        <script>
+            const images = [
+
+                "Metallica/metallica-2.jpg",
+                "Metallica/metallica-3.jpg",
+                "Metallica/metallica-4.jpg",
+                "Metallica/metallica-5.jpg",
+                "Metallica/metallica-6.jpg",
+                "Metallica/metallica-7.jpg",
+                "Metallica/metallica-9.jpg",
+            ];
+
+            let currentIndex = 0; // Indeks aktualnie wyświetlanego obrazka
+
+            // Funkcja zmieniająca zdjęcie po kliknięciu
+            function changeImage() {
+                currentIndex++;
+                if (currentIndex >= images.length) {
+                    currentIndex = 0; // koniec tablicy = od nowa
+                }
+                // Zmiana źródła zdjęcia na kolejne
+                document.getElementById("mband").src = images[currentIndex];
+            }
+            function zmiana1() {
+                document.getElementById("killemall").src = "Metallica/killemall-back.jpg"
+            }
+            function zmiana2() {
+                document.getElementById("killemall").src = "Metallica/killemall-front.jpg"
+            }
+            function zmiana3() {
+                document.getElementById("lightning").src = "Metallica/ride-the-lightning-back.jpg"
+            }
+            function zmiana4() {
+                document.getElementById("lightning").src = "Metallica/ride-the-lightning-front.jpg"
+            }
+            function zmiana5() {
+                document.getElementById("master").src = "Metallica/master-of-puppets-back.jpg";
+            }
+            function zmiana6() {
+                document.getElementById("master").src = "Metallica/master-of-puppets-front.jpg";
+            }
+            function zmiana7() {
+                document.getElementById("justice").src = "Metallica/and-justice-for-all-back.jpg";
+            }
+            function zmiana8() {
+                document.getElementById("justice").src = "Metallica/and-justice-for-all-front.jpg";
+            }
+            function zmiana9() {
+                document.getElementById("black").src = "Metallica/black-album-back.jpg";
+            }
+            function zmiana10() {
+                document.getElementById("black").src = "Metallica/black-album-front.jpg";
+            }
+            function zmiana11() {
+                document.getElementById("load").src = "Metallica/load-back.jpg";
+            }
+            function zmiana12() {
+                document.getElementById("load").src = "Metallica/load-front.jpg";
+            }
+            function zmiana13() {
+                document.getElementById("reload").src = "Metallica/reload-back.jpg";
+            }
+            function zmiana14() {
+                document.getElementById("reload").src = "Metallica/reload-front.jpg";
+            }
+            function zmiana15() {
+                document.getElementById("anger").src = "Metallica/st.anger-back.jpg";
+            }
+            function zmiana16() {
+                document.getElementById("anger").src = "Metallica/st.anger-front.jpg";
+            }
+            function zmiana17() {
+                document.getElementById("magnetic").src = "Metallica/death-magnetic-back.jpg";
+            }
+            function zmiana18() {
+                document.getElementById("magnetic").src = "Metallica/death-magnetic-front.jpg";
+            }
+            function zmiana19() {
+                document.getElementById('hardwired').src = 'Metallica/hardwired-back.jpg';
+            }
+            function zmiana20() {
+                document.getElementById('hardwired').src = 'Metallica/hardwired-front.jpg';
+            }
+            function zmiana21() {
+                document.getElementById("72").src = "Metallica/72-seasons-back.jpg";
+            }
+            function zmiana22() {
+                document.getElementById("72").src = "Metallica/72-seasons-front.jpg";
+            }
+            function spotify1() {
+                window.open('https://open.spotify.com/album/1aGapZGHBovnmhwqVNI6JZ', '_blank'); // kill em all
+            }
+            function spotify2() {
+                window.open('https://open.spotify.com/album/05DePtm7oQMdL3Uzw2Jmsc', '_blank');
+            } // ride the lightning
+            function spotify3() {
+                window.open('https://open.spotify.com/album/2Lq2qX3hYhiuPckC8Flj21', '_blank');
+            } // master of puppets
+            function spotify4() {
+                window.open('https://open.spotify.com/album/6jZ1z25PyF4Yd3kHxt9rl1', '_blank');
+            } // and justice for all
+            function spotify5() {
+                window.open('https://open.spotify.com/album/3dck2tBxGfxj9m3CguDgjb', '_blank');
+            }   // black album
+            function spotify6() {
+                window.open('https://open.spotify.com/album/6ndH0UlQbyCOVqByMXXhdV', '_blank');
+            } // load
+            function spotify7() {
+                window.open('https://open.spotify.com/album/0Ip2GlQPoAIgdkqCO2YkMa', '_blank');
+            } // reload
+            function spotify8() {
+                window.open('https://open.spotify.com/album/0HKpzK9ZoJ0oVA43E5gewM', '_blank');
+            } // st. anger
+            function spotify9() {
+                window.open('https://open.spotify.com/album/3bK58rVcWBh3V3vxMLzi0V', '_blank');
+            } // death magnetic
+            function spotify10() {
+                window.open('https://open.spotify.com/album/7LwifLL1anaEd9eIIfIkx7', '_blank');
+            } // hardwired
+            function spotify11() {
+                window.open('https://open.spotify.com/album/6UwjRSX9RQyNgJ3LwYhr9i', '_blank');
+            } // 72 seasons
+
+
+
+        </script>
+        <figure>
+            <img src="Metallica/metallica-3.jpg" width="44%" alt="mband" id="mband" onclick="changeImage()"
+                style="cursor:pointer">
+            <figcaption>Kliknij na zdjęcie, aby zobaczyć następne</figcaption>
+        </figure>
+        <h1>Metallica</h1>
+        <p>Amerykański zespół heavymetalowy i thrashmetalowy założony w Los Angeles w Kalifornii w 1981 roku przez
+            Jamesa Hetfielda i Larsa Ulricha. Uważany za jeden z najważniejszych, najbardziej wpływowych zespołów
+            metalowych lat 80. XX wieku, w latach 90. ubiegłego stulecia za najbardziej dochodowy zespół metalowy, a
+            także za jeden z najpopularniejszych i najwybitniejszych zespołów heavymetalowych w dziejach. Metallica to
+            grupa metalowa z największą liczbą sprzedanych nagrań w historii. Nagrania zespołu rozeszły się w nakładzie
+            150–200 milionów egzemplarzy. Są również dziewiątymi artystami obok Led Zeppelin i Julio Iglesiasa, którzy
+            sprzedali najwięcej płyt w dziejach. W samych Stanach Zjednoczonych nakład ze sprzedaży płyt zespołu
+            przekroczył 100 milionów 500 tysięcy kopii. Oryginalnie zespół tworzyli: <b>James Hetfield</b> (gitara
+            rytmiczna i
+            wokal), <b>Lars Ulrich</b> (perkusja), <b>Cliff Burton</b> (gitara basowa) i <b>Kirk Hammet</b> (gitara
+            prowadząca, wokal
+            wspierający). Obecnie Cliffa Burtona, który zginął w wypadku autokarowym w 1986 roku, zastępuje <b>Robert
+                Trujillo</b>.
+        </p>
+        <h1>DYSKOGRAFIA</h1>
+        <p>Do tej pory Metallica wydała 11 albumów studyjnych na przestrzeni ostatnich 40 lat.</p>
+        <h4>Aby odsłuchać danego albumu w serwisie Spotify, kliknij na jego okładkę lewym przyciskiem myszy. (Zostanie
+            otworzony w nowej karcie)</h4>
+        <table>
+            <tr>
+                <td>
+                    <figure><img src="Metallica/killemall-front.jpg" class="albumy" alt="killemall" id="killemall"
+                            onmouseover="zmiana1()" onmouseout="zmiana2()" onclick="spotify1()" style="cursor:pointer">
+                        <figcaption>Kill 'Em All (1983)</figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure><img src="Metallica/ride-the-lightning-front.jpg" class="albumy" alt="lightning"
+                            id="lightning" onmouseover="zmiana3()" onmouseout="zmiana4()" onclick="spotify2()"
+                            style="cursor:pointer">
+                        <figcaption>Ride The Lightning (1984)</figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure><img src="Metallica/master-of-puppets-front.jpg" class="albumy" alt="master" id="master"
+                            onmouseover="zmiana5()" onmouseout="zmiana6()" onclick="spotify3()" style="cursor:pointer">
+                        <figcaption>Master of Puppets (1986)</figcaption>
+                    </figure>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <figure><img src="Metallica/and-justice-for-all-front.jpg" class="albumy" alt="justice" id="justice"
+                            onmouseover="zmiana7()" onmouseout="zmiana8()" onclick="spotify4()" style="cursor:pointer">
+                        <figcaption>...And Justice for All (1988)</figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure><img src="Metallica/black-album-front.jpg" class="albumy" alt="black" id="black"
+                            onmouseover="zmiana9()" onmouseout="zmiana10()" onclick="spotify5()" style="cursor:pointer">
+                        <figcaption>Metallica <i>(The Black Album)</i> (1991)</figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure><img src="Metallica/load-front.jpg" class="albumy" alt="load" id="load"
+                            onmouseover="zmiana11()" onmouseout="zmiana12()" onclick="spotify6()"
+                            style="cursor:pointer">
+                        <figcaption>Load (1996)</figcaption>
+                    </figure>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <figure><img src="Metallica/reload-front.jpg" class="albumy" alt="reload" id="reload"
+                            onmouseover="zmiana13()" onmouseout="zmiana14()" onclick="spotify7()"
+                            style="cursor:pointer">
+                        <figcaption>Reload (1997)</figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure><img src="Metallica/st.anger-front.jpg" class="albumy" alt="anger" id="anger"
+                            onmouseover="zmiana15()" onmouseout="zmiana16()" onclick="spotify8()"
+                            style="cursor:pointer">
+                        <figcaption>St. Anger (2003)</figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure><img src="Metallica/death-magnetic-front.jpg" class="albumy" alt="magnetic" id="magnetic"
+                            onmouseover="zmiana17()" onmouseout="zmiana18()" onclick="spotify9()"
+                            style="cursor:pointer">
+                        <figcaption>Death Magnetic (2008)</figcaption>
+                    </figure>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <figure><img src="Metallica/hardwired-front.jpg" class="albumy" alt="hardwired" id="hardwired"
+                            onmouseover="zmiana19()" onmouseout="zmiana20()" onclick="spotify10()"
+                            style="cursor:pointer">
+                        <figcaption>Hardwired... to Self-Destruct (2016)</figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure><img src="Metallica/72-seasons-front.jpg" class="albumy" alt="72" id="72"
+                            onmouseover="zmiana21()" onmouseout="zmiana22()" onclick="spotify11()"
+                            style="cursor:pointer">
+                        <figcaption>72 Seasons (2023)</figcaption>
+                    </figure>
+                </td>
+            </tr>
+        </table>
+    </main>
+    <hr />
+    <footer>
+        Jakub Gepfert &copy; 2025
+    </footer>
+</body>
+
+</html>
