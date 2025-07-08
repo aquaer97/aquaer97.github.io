@@ -1,3 +1,3 @@
 # incompetent WWW website
 
-## Last update: `27.05.2025`
+## Last update: `08.07.2025`
