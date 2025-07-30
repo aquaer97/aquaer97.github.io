@@ -110,10 +110,6 @@ li {
 	margin-top: 20px;
 }
 
-main {
-	padding: 20px;
-}
-
 footer {
 	clear: both;
 	padding: 0px;
@@ -121,4 +117,12 @@ footer {
 	position: relative;
 	flex-direction: column;
 	align-items: right;
+}
+
+article {
+	border: 1px solid white;
+	padding: 20px;
+	width: auto;
+	height: 250px;
+	overflow: auto;
 }
