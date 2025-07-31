@@ -17,7 +17,7 @@ body {
 	color: #ffffff;
 	background-color: #000000;
 	text-decoration: none;
-	border-radius: 10px;
+	border-radius: 15px;
 	padding: 10px 20px;
 	margin: 0 10px;
 	display: inline-block;
@@ -124,6 +124,16 @@ article {
 	margin-top: 100px;
 	justify-self: center;
 }
+a{
+	color:#51a2ff;
+}
+a:hover{
+	color:#2b7fff;
+}
+a:visited{
+	color:#155dfb;
+}
+
 /*SCROLLBAR*/
 /* width */
 ::-webkit-scrollbar {
