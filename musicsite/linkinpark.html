@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="icon" href="Linkin Park/hybrid-front.jpg" type="image/jpg">
+    <title>die Lieblingsmuzik</title>
+</head>
+
+<body onload="zegar()">
+    <nav>
+        <div class="div-powrot">
+            <a href="index.html"><button class="back" style="cursor:pointer">
+                    << Powrót</button></a>
+        </div>
+        <h1 class="logo">Moje ulubione zespoły muzyczne</h1><br />
+        <div style="border:3px solid #00ff41; width:100px; font-family:monospace" id="czas">
+            <script src="./zegar_zewnetrzny.js"></script>
+        </div>
+    </nav> 
+    <main>
+        <script>
+            const images = [
+                "Linkin Park/lp-1.jpg",
+                "Linkin Park/lp-2.jpg",
+                "Linkin Park/lp-3.jpg",
+                "Linkin Park/lp-4.jpg",
+                "Linkin Park/lp-5.jpg",
+                "Linkin Park/lp-6.jpg",
+                "Linkin Park/lp-7.jpg",
+                "Linkin Park/lp-8.jpg",
+                "Linkin Park/lp-9.jpg",
+                "Linkin Park/lp-10.jpg"
+            ];
+
+            let currentIndex = 0; // Indeks aktualnie wyświetlanego obrazka
+
+            // Funkcja zmieniająca zdjęcie po kliknięciu
+            function changeImage() {
+                currentIndex++;
+                if (currentIndex >= images.length) {
+                    currentIndex = 0; // koniec tablicy = od nowa
+                }
+                // Zmiana źródła zdjęcia na kolejne
+                document.getElementById("rband").src = images[currentIndex];
+            }
+            function zmiana1() {
+                document.getElementById("hybrid").src = "Linkin Park/hybrid-back.jpg"
+            }
+            function zmiana2() {
+                document.getElementById("hybrid").src = "Linkin Park/hybrid-front.jpg"
+            }
+            function zmiana3() {
+                document.getElementById("meteora").src = "Linkin Park/meteora-back.jpg"
+            }
+            function zmiana4() {
+                document.getElementById("meteora").src = "Linkin Park/meteora-front.jpg"
+            }
+            function zmiana5() {
+                document.getElementById("minutes").src = "Linkin Park/minutes-back.jpg";
+            }
+            function zmiana6() {
+                document.getElementById("minutes").src = "Linkin Park/minutes-front.jpg";
+            }
+            function zmiana7() {
+                document.getElementById("1000").src = "Linkin Park/1000-suns-back.jpg";
+            }
+            function zmiana8() {
+                document.getElementById("1000").src = "Linkin Park/1000-suns-front.jpg";
+            }
+            function zmiana9() {
+                document.getElementById("living").src = "Linkin Park/living-things-back.jpg";
+            }
+            function zmiana10() {
+                document.getElementById("living").src = "Linkin Park/living-things-front.jpg";
+            }
+            function zmiana11() {
+                document.getElementById("hunting").src = "Linkin Park/hunting-party-back.jpg";
+            }
+            function zmiana12() {
+                document.getElementById("hunting").src = "Linkin Park/hunting-party-front.jpg";
+            }
+            function zmiana13() {
+                document.getElementById("light").src = "Linkin Park/one-more-light-back.jpg";
+            }
+            function zmiana14() {
+                document.getElementById("light").src = "Linkin Park/one-more-light-front.jpg";
+            }
+            function zmiana15() {
+                document.getElementById("zero").src = "Linkin Park/from-zero-back.jpg";
+            }
+            function zmiana16() {
+                document.getElementById("zero").src = "Linkin Park/from-zero-front.jpg";
+            }
+            function spotify1() {
+                window.open("https://open.spotify.com/album/6hPkbAV3ZXpGZBGUvL6jVM", "_blank");
+            }
+            function spotify2() {
+                window.open("https://open.spotify.com/album/0f7R0jf0pcTb6K6IVVPcMD", "_blank");
+            }
+            function spotify3() {
+                window.open("https://open.spotify.com/album/7pgs38iLfEqUtwgCRgvbND", "_blank");
+            }
+            function spotify4() {
+                window.open("https://open.spotify.com/album/5uvXx5ZQswNRFCdHR521YZ", "_blank");
+            }
+            function spotify5() {
+                window.open("https://open.spotify.com/album/4XHIjbhjRmqWlosjj5rqSI", "_blank");
+            }
+            function spotify6() {
+                window.open("https://open.spotify.com/album/3XB2yloP7l00tEUmaODtVi", "_blank");
+            }
+            function spotify7() {
+                window.open("https://open.spotify.com/album/5Eevxp2BCbWq25ZdiXRwYd", "_blank");
+            }
+            function spotify8() {
+                window.open("https://open.spotify.com/album/4R6FV9NSzhPihHR0h4pI93", "_blank");
+            }
+
+
+        </script>
+        <figure>
+            <img src="Linkin Park/lp-10.jpg" width="44%" alt="rband" id="rband" onclick="changeImage()"
+                style="cursor:pointer">
+            <figcaption>Kliknij na zdjęcie, aby zobaczyć następne</figcaption>
+        </figure>
+        <h1>Linkin Park</h1>
+        <p>Amerykański zespół rockowy założony w Agoura Hills w Kalifornii w 1996 roku. Obecny skład zespołu obejmuje
+            wokalistę, gitarzystę rytmicznego i klawiszowca <b>Mike'a Shinodę</b>, gitarzystę prowadzącego <b>Brada
+                Delsona</b>, <br />DJ-a/turntablistę <b>Joe Hahna</b>, basistę <b>Dave'a Farrella</b>, wokalistkę
+            <b>Emily
+                Armstrong</b> oraz perkusistę <b>Colina Brittaina</b>. Skład zespołu na pierwszych siedmiu albumach
+            studyjnych obejmował głównego wokalistę <b>Chestera Benningtona</b> i perkusistę <b>Roba Bourdona</b>,
+            aż do samobójczej śmierci Benningtona w lipcu 2017 roku, co doprowadziło zespół do zawieszenia
+            działalności na czas nieokreślony. We wrześniu 2024 roku ogłoszono reaktywację Linkin Park wraz z
+            dołączeniem Armstrong i Brittaina do zespołu.<br />
+            Linkin Park jest głównie klasyfikowany jako zespół tworzący muzykę z gatunku rocka alternatywnego i nu
+            metalu. Wczesna twórczość zespołu była połączeniem heavy metalu i hip-hopu, natomiast późniejsze utwory
+            zawierają więcej elementów elektroniki i popu. Linkin Park zdobył międzynarodową sławę dzięki
+            debiutanckiemu albumowi studyjnemu Hybrid Theory (2000), który uzyskał status Diamentowej Płyty
+            przyznany przez Amerykańskie Stowarzyszenie Przemysłu Nagraniowego (RIAA).
+        </p>
+        <h1>DYSKOGRAFIA</h1>
+        <p>Do tej pory Linkin Park wydał 8 albumów studyjnych na przestrzeni ostatnich 25 lat, które sprzedały się w
+            łącznym nakładzie ponad 130 milionów sztuk.</p>
+        <h4>Aby odsłuchać danego albumu w serwisie Spotify, kliknij na jego okładkę lewym przyciskiem myszy. (Zostanie
+            otworzony w nowej karcie)</h4>
+        <table>
+            <tr>
+                <td>
+                    <figure><img src="Linkin Park/hybrid-front.jpg" class="albumy" alt="hybrid" id="hybrid"
+                            onmouseover="zmiana1()" onmouseout="zmiana2()" onclick="spotify1()" style="cursor:pointer">
+                        <figcaption>Hybrid Theory (2000)</figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure><img src="Linkin Park/meteora-front.jpg" class="albumy" alt="meteora" id="meteora"
+                            onmouseover="zmiana3()" onmouseout="zmiana4()" onclick="spotify2()" style="cursor:pointer">
+                        <figcaption>Meteora (2003)</figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure><img src="Linkin Park/minutes-front.jpg" class="albumy" alt="minutes" id="minutes"
+                            onmouseover="zmiana5()" onmouseout="zmiana6()" onclick="spotify3()" style="cursor:pointer">
+                        <figcaption>Minutes to Midnight (2007)</figcaption>
+                    </figure>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <figure><img src="Linkin Park/1000-suns-front.jpg" class="albumy" alt="1000" id="1000"
+                            onmouseover="zmiana7()" onmouseout="zmiana8()" onclick="spotify4()" style="cursor:pointer">
+                        <figcaption>A Thousand Suns (2010)</figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure><img src="Linkin Park/living-things-front.jpg" class="albumy" alt="living" id="living"
+                            onmouseover="zmiana9()" onmouseout="zmiana10()" onclick="spotify5()" style="cursor:pointer">
+                        <figcaption>Living Things (2012)</figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure><img src="Linkin Park/hunting-party-front.jpg" class="albumy" alt="hunting" id="hunting"
+                            onmouseover="zmiana11()" onmouseout="zmiana12()" onclick="spotify6()"
+                            style="cursor:pointer">
+                        <figcaption>The Hunting Party (2014)</figcaption>
+                    </figure>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <figure><img src="Linkin Park/one-more-light-front.jpg" class="albumy" alt="light" id="light"
+                            onmouseover="zmiana13()" onmouseout="zmiana14()" onclick="spotify7()"
+                            style="cursor:pointer">
+                        <figcaption>One More Light (2017)</figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure><img src="Linkin Park/from-zero-front.jpg" class="albumy" alt="zero" id="zero"
+                            onmouseover="zmiana15()" onmouseout="zmiana16()" onclick="spotify8()"
+                            style="cursor:pointer">
+                        <figcaption>From Zero (2024)</figcaption>
+                    </figure>
+                </td>
+            </tr>
+        </table>
+    </main>
+    <hr />
+    <footer>
+        Jakub Gepfert &copy; 2025
+    </footer>
+</body>
+
+</html>
