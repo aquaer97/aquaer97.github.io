@@ -16,7 +16,6 @@
       <a class="links" href="games.html">Beaten games</a>
       <a class="links" href="hardware.html">Hardware</a>
       <a class="links" href="blog.html">Blog</a>
-      
     </div>
   </div>
   <main style="margin-left: 15%; margin-right: 15%;">
@@ -27,8 +26,21 @@
       Click on the tab you are interested in from the menu above and thanks for visiting!<br />
     </p>
     <h1>New blog post! <a href="blog-posts/4-wieczorne-przemyslenia.html">Check it out!</a></h1>
+
+    <!-- Thursday GIF - ukryty domyślnie -->
+    <div id="thursdayGif" style="display: none; margin-top: 20px;">
+      <img src="assets/feliz-jueves.gif" alt="FELIZ JUEVES" style="max-width: 100%;">
+    </div>
+
+    <!-- Friday Movie - ukryty domyślnie -->
+    <div id="fridayMovie" style="display: none; margin-top: 20px;">
+      <video controls autoplay muted loop style="max-width: 100%;">
+        <source src="assets/piatek_piateczek_piatunio_oryginal.mp4" type="video/mp4">
+        Twoja przeglądarka nie obsługuje elementu video.
+      </video>
+    </div>
   </main>
-  </div>
+
   <footer class="footer">
     <br />
     <hr />
@@ -37,5 +49,17 @@
         target="_blank">@smb37</a> and <a class="simba-link" href="https://github.com/road44" target="_blank">@h0ld4</a>
       for help.</p>
   </footer>
+
+  <script>
+    const today = new Date();
+    const dayOfWeek = today.getDay();
+
+    if (dayOfWeek === 4) {
+      document.getElementById('thursdayGif').style.display = 'block';
+    }
+    if (dayOfWeek === 5) {
+      document.getElementById('fridayMovie').style.display = 'block';
+    }
+  </script>
 
 </html>
