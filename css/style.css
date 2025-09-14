@@ -93,13 +93,13 @@ li {
 }
 
 .div_main {
-	margin-left: 15%;
-	margin-right: 15%;
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin: 0 auto;
+	padding: 0 15%;
 }
 
 .menu {
@@ -112,42 +112,43 @@ footer {
 	text-align: right;
 	position: relative;
 	flex-direction: column;
-	align-items: right;
+	align-items: flex-end;
 }
 
 article {
 	width: 80%;
+	max-width: 800px;
 	overflow: auto;
-	margin-top: 10px;
-	justify-self: center;
+	margin: 10px auto 0 auto;
+	text-align: left;
 }
-a{
-	color:#51a2ff;
+a {
+	color: #51a2ff;
 }
-a:hover{
-	color:#2b7fff;
+a:hover {
+	color: #2b7fff;
 }
-a:visited{
-	color:#155dfb;
+a:visited {
+	color: #155dfb;
 }
 
 /*SCROLLBAR*/
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+	width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #292929;
+	background: #292929;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+	background: #888;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+	background: #555;
 }
