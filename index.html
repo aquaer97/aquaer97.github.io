@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aquaer97</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="shortcut icon" href="assets/miku-favicon.png" type="image/x-icon">
+</head>
+
+<body onload="zegar()">
+    <div class="parent">
+        <div class="header">
+            <img src="assets/aquaer97.png" class="logo" width="200vh;" alt="aquaer97">
+        </div>
+
+        <div class="content-wrapper">
+            <div class="nav">
+                <nav>
+                    <div style="border:3px solid; width:100px; font-family:monospace;" id="czas">
+                        <script src="./zegar_zewnetrzny.js"></script>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">STRONA GŁÓWNA</a></li>
+                        <li><a href="games.html">GRY</a></li>
+                        <li><a href="music.html">MUZYKA <br><img src="assets/workinprogress.png" alt="wip"
+                                    width="40vh"></a></li>
+                        <li><a href="movies.html">FILMY<br><img src="assets/workinprogress.png" alt="wip"
+                                    width="40vh"></a></li>
+                        <li><a href="hardware.html">SPRZĘT</a></li>
+                        <li><a href="blog.html">BLOG<br><img src="assets/workinprogress.png" alt="wip" width="40vh"></a>
+                        </li>
+
+                    </ul>
+                    <div id="thursdayGif" style="display: none; margin-top: 20px;">
+                        <img src="assets/feliz-jueves.gif" alt="FELIZ JUEVES" style="max-width: 100%;">
+                    </div>
+
+                    <div id="fridayMovie" style="display: none; margin-top: 20px;">
+                        <video controls autoplay muted loop style="max-width: 100%;">
+                            <source src="assets/piatek_piateczek_piatunio_oryginal.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </nav>
+            </div>
+            <div class="main">
+                <h2 class="rainbow">Witaj na mojej <b>nowej</b> stronie!!</h2>
+                <p>Strona została zaprojektowana z myślą o wyświetlaniu na komputerze, <b>NIE JEST ZALECANE</b>
+                    przeglądanie jej na telefonie. Najlepiej wyświetla się na ekranie o rozdzielczości <b>2560 x 1440
+                        (1440p).</b>
+                </p>
+
+                <article class="changelog">
+                    <h3 style="color:darkorchid">Changelog</h3>
+                    <b style="font-size:large;">23/11/2025</b>
+                    <li>Dodano wykonawców muzycznych na podstronę music.html.</li>
+                    <li>Dodano znak "work in progress" do przycisków odsyłających do stron, które nie są jeszcze
+                        skończone.</li><br>
+                    <b style="font-size: large;">22/11/2025</b>
+                    <li>Ukończono pierwszą wersję aside - ostatnio słuchany album i ostatnio skończona gra.</li>
+                    <li>Dodano zegar zewnętrzny z lekcji programowania aplikacji z klasy III.</li>
+                    <li>Usunięto obrazki z nav, zastępując je gifami dodanymi dzień wcześniej, tj. 21/11/2025.</li><br>
+                    <b style="font-size: large;">21/11/2025</b>
+                    <li>Dodano skrypt wyświetlający gif w każdy czwartek i filmik w każdy piątek.</li>
+                    <li>Dodano obrazki w <b>nav</b>.</li>
+                    <li>Zmodyfikowano hardware.html, przetłumaczono na język polski.</li><br>
+                    <b style="font-size: large">12/10/2025</b>
+                    <li>Wstępnie ukończono index.html oraz games.html.</li>
+                </article>
+            </div>
+            <div class="aside">
+                <aside>
+                    <h3>Ostatnio słuchany album</h3>
+                    <img src="/assets/music/nirvana-in-utero.jpg" alt="InUtero" width="80%" border="5px solid black"
+                        class="center">
+                    <p class="opis-aside">Nirvana - In Utero (1993)</p>
+                    <hr style="border-top:1px solid black">
+                    <h3>Ostatnio ukończona gra</h3>
+                    <img src="/assets/games/papers-please.jpg" alt="PapersPlease" width="80%" border="5px solid black"
+                        class="center">
+                    <p class="opis-aside">Papers, Please (2013)</p>
+                </aside>
+            </div>
+        </div>
+        <div class="footer">
+            <footer>
+                <p>Made with <3 in Poland A.D. 2025 &copy; aquaer97</p>
+            </footer>
+        </div>
+    </div>
+</body>
+<script src="felizjueves.js"></script>
+
+</html>

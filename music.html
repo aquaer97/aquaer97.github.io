@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>retro aquaer</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="shortcut icon" href="assets/miku-favicon.png" type="image/x-icon">
+</head>
+
+<body onload="zegar()">
+    <div class="parent">
+        <div class="header">
+            <img src="assets/aquaer97.png" class="logo" width="200vh;" alt="aquaer97">
+        </div>
+
+        <div class="content-wrapper">
+            <div class="nav">
+                <nav>
+                    <div style="border:3px solid; width:100px; font-family:monospace;" id="czas">
+                        <script src="./zegar_zewnetrzny.js"></script>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">STRONA GŁÓWNA</a></li>
+                        <li><a href="games.html">GRY</a></li>
+                        <li><a href="music.html">MUZYKA <br><img src="assets/workinprogress.png" alt="wip"
+                                    width="40vh"></a></li>
+                        <li><a href="movies.html">FILMY<br><img src="assets/workinprogress.png" alt="wip"
+                                    width="40vh"></a></li>
+                        <li><a href="hardware.html">SPRZĘT</a></li>
+                        <li><a href="blog.html">BLOG<br><img src="assets/workinprogress.png" alt="wip" width="40vh"></a></li>
+
+                    </ul>
+                    <div id="thursdayGif" style="display: none; margin-top: 20px;">
+                        <img src="assets/feliz-jueves.gif" alt="FELIZ JUEVES" style="max-width: 100%;">
+                    </div>
+
+                    <div id="fridayMovie" style="display: none; margin-top: 20px;">
+                        <video controls autoplay muted loop style="max-width: 100%;">
+                            <source src="assets/piatek_piateczek_piatunio_oryginal.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </nav>
+            </div>
+            <div class="main">
+                <h2>Muzyka</h2>
+                <div class="music" style="display: flex; flex-wrap: wrap; align-items: center;">
+                    <figure><img src="assets/music/rammstein/rammstein.jpg" alt="rammstein" width="200vh">
+                        <figcaption>Rammstein</figcaption>
+                    </figure>
+                    <figure><img src="assets/music/metallica/metallica.jpg" alt="metallica" width="200vh"
+                            height="200vh">
+                        <figcaption>Metallica</figcaption>
+                    </figure>
+                    <figure><img src="assets/music/linkin park/linkinpark.jpg" alt="linkin park" width="200vh">
+                        <figcaption>Linkin Park</figcaption>
+                    </figure>
+                    <figure><img src="assets/music/system of a down/systemofadown.jpg" alt="system of a down"
+                            width="200vh">
+                        <figcaption>System Of A Down</figcaption>
+                    </figure>
+                    <figure><img src="assets/music/kino/зведа-по-имени-солнце.jpg" alt="kino" width="200vh"
+                            height="200vh">
+                        <figcaption>КИНО</figcaption>
+                    </figure>
+                    <figure><img src="assets/music/black sabbath/black-sabbath.jpg" alt="blacksabbath" width="200vh">
+                        <figcaption>Black Sabbath</figcaption>
+                    </figure>
+                    <figure><img src="assets/music/arcticmonkeys/am4.jpg" alt="arcticmonkeys" width="200vh">
+                        <figcaption>Arctic Monkeys</figcaption>
+                    </figure>
+                    <figure><img src="assets/music/taco hemingway/tacohemingway.jpg" alt="tacohemingway" width="200vh">
+                        <figcaption>Taco Hemingway</figcaption>
+                    </figure>
+                </div>
+
+            </div>
+            <div class="aside">
+                <aside>
+                    <h3>Ostatnio słuchany album</h3>
+                    <img src="/assets/music/nirvana-in-utero.jpg" alt="InUtero" width="80%" border="5px solid black"
+                        class="center">
+                    <p class="opis-aside">Nirvana - In Utero (1993)</p>
+                    <hr style="border-top:1px solid black">
+                    <h3>Ostatnio ukończona gra</h3>
+                    <img src="/assets/games/papers-please.jpg" alt="PapersPlease" width="80%" border="5px solid black"
+                        class="center">
+                    <p class="opis-aside">Papers, Please (2013)</p>
+                    
+                </aside>
+            </div>
+        </div>
+        <div class="footer">
+            <footer>
+                <p>Made with <3 in Poland A.D. 2025 &copy; aquaer97</p>
+            </footer>
+        </div>
+    </div>
+</body>
+<script src="felizjueves.js"> </script>
+
+</html>

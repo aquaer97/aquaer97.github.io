@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>retro aquaer</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="shortcut icon" href="assets/miku-favicon.png" type="image/x-icon">
+</head>
+
+<body onload="zegar()">
+    <div class="parent">
+        <div class="header">
+            <img src="assets/aquaer97.png" class="logo" width="200vh;" alt="aquaer97">
+        </div>
+
+        <div class="content-wrapper">
+            <div class="nav">
+                <nav>
+                    <div style="border:3px solid; width:100px; font-family:monospace;" id="czas">
+                        <script src="./zegar_zewnetrzny.js"></script>
+                    </div>
+                    <ul>
+                        <li><a href="index.html">STRONA GŁÓWNA</a></li>
+                        <li><a href="games.html">GRY</a></li>
+                        <li><a href="music.html">MUZYKA <br><img src="assets/workinprogress.png" alt="wip"
+                                    width="40vh"></a></li>
+                        <li><a href="movies.html">FILMY<br><img src="assets/workinprogress.png" alt="wip"
+                                    width="40vh"></a></li>
+                        <li><a href="hardware.html">SPRZĘT</a></li>
+                        <li><a href="blog.html">BLOG<br><img src="assets/workinprogress.png" alt="wip" width="40vh"></a>
+                        </li>
+
+                    </ul>
+                    <div id="thursdayGif" style="display: none; margin-top: 20px;">
+                        <img src="assets/feliz-jueves.gif" alt="FELIZ JUEVES" style="max-width: 100%;">
+                    </div>
+
+                    <div id="fridayMovie" style="display: none; margin-top: 20px;">
+                        <video controls autoplay muted loop style="max-width: 100%;">
+                            <source src="assets/piatek_piateczek_piatunio_oryginal.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                </nav>
+            </div>
+            <div class="main">
+                <h1 style="margin-bottom: 1vh;">BLOG</h1>
+                <p style="margin-bottom:50px;">Nowy pomysł, na który wpadłem przeglądając internet,
+                    przede wszystkim strony z webringów na <a href="https://neocities.org" target="_blank">Neocities</a>
+                    - mój własny blog.<br />
+                    Format dat: DD/MM/YYYY</p>
+
+                <ul style="list-style-type:square;">
+                    <li>
+                        <h3><a href="blog-posts/5-Мы ждём перемен.html">Мы ждём перемен! - 09/10/2025</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="blog-posts/4-wieczorne-przemyslenia.html">wieczorne przemyślenia - 19/08/2025</a>
+                        </h3>
+                    </li>
+
+                    <li>
+                        <h3><a href="blog-posts/3-massive-skill-issue.html"> Massive skill issue - 31/07/2025</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="blog-posts/2-cyfrowy-zamordyzm.html">Cyfrowy zamordyzm - 31/07/2025</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="blog-posts/1-first-article.html">Pierwszy artykuł! - 30/07/2025</a></h3>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="aside">
+                <aside>
+                    <h3>Ostatnio słuchany album</h3>
+                    <img src="/assets/music/nirvana-in-utero.jpg" alt="InUtero" width="80%" border="5px solid black"
+                        class="center">
+                    <p class="opis-aside">Nirvana - In Utero (1993)</p>
+                    <hr style="border-top:1px solid black">
+                    <h3>Ostatnio ukończona gra</h3>
+                    <img src="/assets/games/papers-please.jpg" alt="PapersPlease" width="80%" border="5px solid black"
+                        class="center">
+                    <p class="opis-aside">Papers, Please (2013)</p>
+                </aside>
+            </div>
+        </div>
+        <div class="footer">
+            <footer>
+                <p>Made with <3 in Poland A.D. 2025 &copy; aquaer97</p>
+            </footer>
+        </div>
+    </div>
+</body>
+<script src="felizjueves.js"> </script>
+
+</html>
