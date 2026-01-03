@@ -1,26 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 
 <head>
-    <title>aquaer97 - blog</title>
-    <link href="../css/style.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aquaer97</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="shortcut icon" href="assets/miku-favicon.png" type="image/x-icon">
 </head>
 
-<body>
-    <div class="div_head">
-        <h1>aquaer97</h1>
-        <div class="menu">
-            <a class="links" href="../index.html">Home</a>
-            <a class="links" href="../games.html">Beaten games</a>
-            <a class="links" href="../hardware.html">Hardware</a>
-            <a class="links" href="../blog.html">Blog</a>
+<body onload="zegar()">
+    <div class="parent">
+        <div class="header">
+            <img src="/assets/aquaer97.png" class="logo" width="200vh;" alt="aquaer97">
         </div>
-    </div>
-    <main style="padding:1px 20px;">
-        <article>
-            <h3>wieczorne przemyślenia - 19/08/2025</h3>
+
+        <div class="content-wrapper">
+            <div class="nav">
+                <nav>
+                    <div style="border:3px solid; width:100px; font-family:monospace;" id="czas">
+                        <script src="../zegar_zewnetrzny.js"></script>
+                    </div>
+                    <ul>
+                        <li><a href="/index.html">STRONA GŁÓWNA</a></li>
+                        <li><a href="/games.html">GRY</a></li>
+                        <li><a href="/music.html">MUZYKA <br><img src="/assets/workinprogress.png" alt="wip"
+                                    width="40vh"></a></li>
+                        <li><a href="/movies.html">FILMY<br><img src="/assets/workinprogress.png" alt="wip"
+                                    width="40vh"></a></li>
+                        <li><a href="/hardware.html">SPRZĘT</a></li>
+                        <li><a href="/blog.html">BLOG</a>
+                        </li>
+
+                    </ul>
+                    <div id="thursdayGif" style="display: none; margin-top: 20px;">
+                        <img src="/assets/feliz-jueves.gif" alt="FELIZ JUEVES" style="max-width: 100%;">
+                    </div>
+
+                    <div id="fridayMovie" style="display: none; margin-top: 20px;">
+                        <video controls autoplay muted loop style="max-width: 100%;">
+                            <source src="/assets/piatek_piateczek_piatunio_oryginal.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </nav>
+            </div>
+            <div class="main">
+                <article>
+                    <h3 style="text-align: left;"><a href="../blog.html">
+                            << Go back</a>
+                    </h3>
+                    <h3>wieczorne przemyślenia - 19/08/2025</h3>
             <p style="text-indent:20px">Ostatnio oglądam Attack on Titan i nie chce mi się grać w gry, super anime
                 polecam każdemu. Poza tym mam jakąś fazę na retro i stare rzeczy. Zastanawiam się nad sprowadzaniem
                 laptopa z Japonii, konkretniej jakiegoś Panasonica Let's Note. Zapewne jak to zwykle z moim
@@ -72,18 +103,30 @@
                 czyż nie? Jeszcze to przemyślę kiedyś, najpierw wypadałoby zacząć w ogóle tę stronę pisać. </p>
             <p>I tym akcentem kończę, bo ileż można pisać? I tak nikt tego nie przeczyta
                 (chociaż może to i lepiej?).</p>
-        </article>
-        <h3 style="text-align: center;"><a href="../blog.html">
-                << Go back</a>
-        </h3>
-    </main>
-    <footer style="margin-top:60px">
-        <br />
-        <hr />
-        <p style="text-align: right; margin-right:20px;">aquaer97 &copy; 2023 - 2025<br />Last updated: 14/09/2025</p>
-        <p style="font-size:11px; margin-right:20px;">Thanks <a class="simba-link" href="https://github.com/sadmeansbad"
-                target="_blank">@smb37</a> and <a class="simba-link" href="https://github.com/road44"
-                target="_blank">@h0ld4</a> for help.</p>
-    </footer>
+                </article>
+
+            </div>
+            <div class="aside">
+                <aside>
+                    <h3>Ostatnio słuchany album</h3>
+                    <img src="/assets/music/recently-listened/hozier.jpg" alt="recently-listened-album-cover"
+                        width="80%" border="5px solid black" class="center">
+                    <p class="opis-aside">Hozier - Hozier (2014)</p>
+                    <hr style="border-top:1px solid black">
+                    <h3>Ostatnio ukończona gra</h3>
+                    <img src="/assets/games/papers-please.jpg" alt="PapersPlease" width="80%" border="5px solid black"
+                        class="center">
+                    <p class="opis-aside">Papers, Please (2013)</p>
+                </aside>
+            </div>
+        </div>
+        <div class="footer">
+            <footer>
+                <p>Made with <3 in Poland A.D. 2025 &copy; aquaer97</p>
+            </footer>
+        </div>
+    </div>
+</body>
+<script src="/felizjueves.js"></script>
 
 </html>
