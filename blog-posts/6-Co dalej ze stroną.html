@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aquaer97</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="shortcut icon" href="assets/miku-favicon.png" type="image/x-icon">
+</head>
+
+<body onload="zegar()">
+    <div class="parent">
+        <div class="header">
+            <img src="/assets/aquaer97.png" class="logo" width="200vh;" alt="aquaer97">
+        </div>
+
+        <div class="content-wrapper">
+            <div class="nav">
+                <nav>
+                    <div style="border:3px solid; width:100px; font-family:monospace;" id="czas">
+                        <script src="../zegar_zewnetrzny.js"></script>
+                    </div>
+                    <ul>
+                        <li><a href="/index.html">STRONA GŁÓWNA</a></li>
+                        <li><a href="/games.html">GRY</a></li>
+                        <li><a href="/music.html">MUZYKA </a></li>
+                        <li><a href="/movies.html">FILMY<br><img src="/assets/workinprogress.png" alt="wip"
+                                    width="40vh"></a></li>
+                        <li><a href="/hardware.html">SPRZĘT</a></li>
+                        <li><a href="/blog.html">BLOG</a>
+                        </li>
+
+                    </ul>
+                    <div id="thursdayGif" style="display: none; margin-top: 20px;">
+                        <img src="/assets/feliz-jueves.gif" alt="FELIZ JUEVES" style="max-width: 100%;">
+                    </div>
+
+                    <div id="fridayMovie" style="display: none; margin-top: 20px;">
+                        <video controls autoplay muted loop style="max-width: 100%;">
+                            <source src="/assets/piatek_piateczek_piatunio_oryginal.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </nav>
+            </div>
+            <div class="main">
+                <article>
+                    <h3 style="text-align: left;"><a href="../blog.html">
+                            << Go back</a>
+                    </h3>
+                    <h3>Co dalej ze stroną - 18/03/2026</h3>
+                    <p style="text-indent:20px">Pierwszy wpis na tym niejako porzuconym już blogu rozpoczynam od stwierdzenia, iż na obecną chwilę przestało mi się chcieć ogarniać tę stronę. Jedyne co teraz przy niej robię, to dodaję gry do tabeli, nawet nie zmieniając tego co jest w aside'zie. Zresztą z grami też trochę przyhamowałem - w lutym niczego nie przeszedłem. Muszę tę stronę przenieść na jakiś framework, bo latanie po dwudziestu plikach html i przeklejanie tego samego już mi się znudziło i mnie męczy. Poza tym znowu tę stronę by się przydało zmienić, bo przestał do mnie przemawiać jej projekt. To by było na tyle, zmian nie należy się spodziewać wcześniej niż za rok albo wcale, pozdrawiam.
+                </article>
+
+            </div>
+            <div class="aside">
+                <aside>
+                    <h3>Ostatnio słuchany album</h3>
+                    <img src="/assets/music/recently-listened/hozier.jpg" alt="recently-listened-album-cover"
+                        width="80%" border="5px solid black" class="center">
+                    <p class="opis-aside">Hozier - Hozier (2014)</p>
+                    <hr style="border-top:1px solid black">
+                    <h3>Ostatnio ukończona gra</h3>
+                    <img src="/assets/games/papers-please.jpg" alt="PapersPlease" width="80%" border="5px solid black"
+                        class="center">
+                    <p class="opis-aside">Papers, Please (2013)</p>
+                </aside>
+            </div>
+        </div>
+        <div class="footer">
+            <footer>
+                <p>Made with <3 in Poland A.D. 2025 &copy; aquaer97</p>
+            </footer>
+        </div>
+    </div>
+</body>
+<script src="/felizjueves.js"></script>
+
+</html>
