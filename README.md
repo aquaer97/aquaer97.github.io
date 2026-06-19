@@ -1,9 +1,7 @@
 # aquaer97.github.io
-Nieprofesjonalna osobista strona od której oczy więdną, a na telefonie (póki co) nie działa.
+Nieprofesjonalna, osobista i nieco porzucona strona od której widoku oczy płaczą, a na telefonie póki co nie działa, i pewnie nie będzie.
 
-# TO DO (23/11/2025)
-- naprawienie wpisów na blogu
-- music.html
+# TO DO (18/05/2026)
 - movies.html
 - naprawienie strony, aby działała na telefonach
 - ...
